@@ -1,0 +1,41 @@
+<% layout('layouts/boilerplate') %>
+<div class="container d-flex justify-content-center align-items-center mt-5">
+  <div class="row">
+      <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+          <div class="card shadow">
+              <img src="https://images.unsplash.com/photo-1573481927995-b8c22c0c34b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  alt="" class="card-img-top" />
+              <div class="card-body">
+                  <h5 class="card-title">Login</h5>
+                  <form action='/login'method='POST'class="row g-3 needs-validation" novalidate>
+                    <div class="mb-3">
+                      <label for="validationCustomUsername" class="form-label">Username</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" name="username"aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                          Please choose a username.
+                        </div>
+                        <div class="valid-feedback">
+                          Looks good
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1"name="password">
+                      
+                      
+                    </div>
+                    
+                    <div class="mb-3">
+                      <button class="btn btn-success" type="submit">Submit form</button>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+© 2022 GitHub, Inc.
